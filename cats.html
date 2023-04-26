@@ -3,19 +3,26 @@
   <head>
     <title>Emma's Cats</title>
   </head>
-  <body style="background-color:rgb(0, 0, 0); color:white;">
-    <style>
-        img{
-    max-width:450px;
-    max-height:450px;
-}
-    </style>
-    <center>
-      <h1 style="font-size:40px;">Emma's Cats</h1>
-    </center>
-    <p>Vaiana</p>
-    <img src="/images/Cat1.png" alt="Maui"
-    <p>Maui</p>
-    <img src="images/Vaiana.jpg" alt="Vaiana"
-  </body>
-</html>
+  <div class="gallery">
+    <div style="background-image: url('images/Cat1.png');"></div>
+    <div style="background-image: url('images/Vaiana.jpg');"></div>
+  </div>
+
+  <style>
+    .gallery {
+      display: flex;
+      height: 20rem;
+      gap: 1rem
+    }
+    .gallery > div {
+      flex: 1;
+      border-radius: 1rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+    }
+    .gallery > div:hover {
+      flex: 5;
+    }
+  </style>
