@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My cat "Pelle"</title>
+  </head>
+  <div class="gallery">
+    <div style="background-image: url('images/MyCat/MyCat1.JPG');"></div>
+    <div style="background-image: url('images/MyCat/MyCat2.JPG');"></div>
+    <div style="background-image: url('images/MyCat/MyCat3.JPG');"></div>
+    <div style="background-image: url('images/MyCat/MyCat4.JPG');"></div>
+    <div style="background-image: url('images/MyCat/MyCat5.JPG');"></div>
+    <div style="background-image: url('images/MyCat/MyCat6.JPG');"></div>
+    <div style="background-image: url('images/MyCat/MyCat7.JPG');"></div>
+    <div style="background-image: url('images/MyCat/MyCat8.JPG');"></div>
+    <div style="background-image: url('images/MyCat/MyCat9.JPG');"></div>
+    <div style="background-image: url('images/MyCat/MyCat10.JPG');"></div>
+  </div>
+
+  <div class="gallery">
+    <div style="background-image: url('images/MyCat/MyCat11.JPG');"></div>
+    <div style="background-image: url('images/MyCat/MyCat12.JPG');"></div>
+    <div style="background-image: url('images/MyCat/MyCat13.JPG');"></div>
+    <div style="background-image: url('images/MyCat/MyCat14.JPG');"></div>
+    <div style="background-image: url('images/MyCat/MyCat15.JPG');"></div>
+    <div style="background-image: url('images/MyCat/MyCat16.JPG');"></div>
+    <div style="background-image: url('images/MyCat/MyCat17.JPG');"></div>
+  </div>
+
+  <style>
+    .gallery {
+      display: flex;
+      height: 20rem;
+      gap: 1rem
+    }
+    .gallery > div {
+      flex: 1;
+      border-radius: 1rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+    }
+    .gallery > div:hover {
+      flex: 5;
+    }
+  </style>
+  <body bgcolor='”#800000"'></body>
+</html>
