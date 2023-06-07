@@ -38,6 +38,33 @@
         <a href="Pelle.html" class="rounded-button2">
             <img src="images/MyCat/MyCat1.JPG" alt="Pelle">
           </a>
+          <script>
+            // JavaScript code goes here
+            // Check if the visitor count exists in localStorage
+            if (localStorage.getItem('visitorCount')) {
+              // If it exists, increment the count
+              var count = parseInt(localStorage.getItem('visitorCount'));
+              count++;
+              localStorage.setItem('visitorCount', count);
+            } else {
+              // If it doesn't exist, set the count to 1
+              localStorage.setItem('visitorCount', 1);
+            }
+        
+            // Display the visitor count
+            var count = localStorage.getItem('visitorCount');
+            console.log('Visitor count: ' + count);
+          </script>
+        </head>
+        <body>
+          <p>Visitor count: <span id="count"></span></p>
+        
+          <script>
+            // JavaScript code to update the visitor count on the page
+            var countElement = document.getElementById('count');
+            var count = localStorage.getItem('visitorCount');
+            countElement.innerText = count;
+          </script>
     </center>
   </body>
 </html>
